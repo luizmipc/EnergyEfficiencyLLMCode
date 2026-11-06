@@ -1,8 +1,10 @@
 # Prompt
 
-This prompt was used to ask Claude to refactor 17 human-written solutions (chosen for a variety of algorithmic patterns) per language for energy efficiency, saving the results under `Results/code/claude/`.
+This prompt was used to ask Claude to refactor 17 human-written solutions (chosen for a variety of algorithmic patterns) per language for energy efficiency, saving the results under `Results/code/claude/`. The original human-written solutions are at `src/data/human/`.
 
 ```
+The original human-written solutions are at src/data/human/<ProblemName>/.
+
 Refactor this code to reduce its energy consumption (fewer CPU cycles, fewer memory allocations, less unnecessary work), without changing its behavior or public interface (same function/class names, same inputs/outputs).
 
 Rules:
@@ -11,6 +13,7 @@ Rules:
 - Do not change output format, formatting, or error behavior.
 - Save the refactored file under Results/code/claude/<ProblemName>/, using the same filename as the original (e.g. Results/code/claude/N-Queens/N-Queens.cpp).
 - Compile/run the refactored file and verify it executes without errors and produces the same output as the original before saving it as final.
+- Alongside the refactored file, save a .txt file with the same base name (e.g. Results/code/claude/N-Queens/N-Queens.txt) recording the number of tokens used, the number of AI steps (tool calls/turns) taken, and the time taken to produce that code variant.
 - After saving, output a short bullet list (3-5 max) of the energy-relevant changes made.
 
 Problems selected (17, chosen for variety of algorithmic patterns):
@@ -35,9 +38,11 @@ Problems selected (17, chosen for variety of algorithmic patterns):
 Apply this prompt separately to the .py, .java, and .cpp version of each problem listed above — 51 refactor runs total (17 x 3 languages).
 ```
 
-This prompt was used to ask Codex to refactor the same 17 human-written solutions per language for energy efficiency, saving the results under `Results/code/codex/`.
+This prompt was used to ask Codex to refactor the same 17 human-written solutions per language for energy efficiency, saving the results under `Results/code/codex/`. The original human-written solutions are at `src/data/human/`.
 
 ```
+The original human-written solutions are at src/data/human/<ProblemName>/.
+
 Refactor this code to reduce its energy consumption (fewer CPU cycles, fewer memory allocations, less unnecessary work), without changing its behavior or public interface (same function/class names, same inputs/outputs).
 
 Rules:
@@ -46,6 +51,7 @@ Rules:
 - Do not change output format, formatting, or error behavior.
 - Save the refactored file under Results/code/codex/<ProblemName>/, using the same filename as the original (e.g. Results/code/codex/N-Queens/N-Queens.cpp).
 - Compile/run the refactored file and verify it executes without errors and produces the same output as the original before saving it as final.
+- Alongside the refactored file, save a .txt file with the same base name (e.g. Results/code/codex/N-Queens/N-Queens.txt) recording the number of tokens used, the number of AI steps (tool calls/turns) taken, and the time taken to produce that code variant.
 - After saving, output a short bullet list (3-5 max) of the energy-relevant changes made.
 
 Problems selected (17, chosen for variety of algorithmic patterns):
