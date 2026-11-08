@@ -36,19 +36,27 @@ one read turn's tokens and tool call fell into the untracked gap between two
 variants and were silently missing from both.
 
 This was systematic, not a one-off — it affected mostly the C++ variants that
-followed directly after a Python variant finished:
+followed directly after a Python variant finished. For 8 of the 9, exactly
+one turn had fallen into the gap; `Find_the_Sum_of_Subsequence_Powers` (cpp)
+lost three consecutive turns this way, which is why its undercount is an
+order of magnitude larger than the others. Re-deriving each of the 9 from
+the transcript (`START`/`END` line ranges re-checked against the actual
+`.jsonl` content) gave these exact before/after values, recorded here for
+transparency:
 
-- `Sudoku_Solver` (python and cpp)
-- `Median_of_Two_Sorted_Arrays` (cpp)
-- `Minimum_Window_Substring` (cpp)
-- `Permutation_Sequence` (cpp)
-- `Sorted_GCD_Pair_Queries` (cpp)
-- `Find_Number_of_Coins_to_Place_in_Tree_Nodes` (cpp)
-- `Text_Justification` (cpp)
-- `Find_the_Sum_of_Subsequence_Powers` (cpp)
+| Problem | Language | Tokens (before → after) | Tool calls / turns (before → after) | Time, s (before → after) |
+|---|---|---:|---:|---:|
+| `Sudoku_Solver` | python | 396,344 → 490,495 (+94,151) | 4 → 5 | 25.03 → 31.99 |
+| `Sudoku_Solver` | cpp | 427,271 → 528,039 (+100,768) | 4 → 5 | 26.74 → 41.52 |
+| `Median_of_Two_Sorted_Arrays` | cpp | 514,278 → 639,056 (+124,778) | 4 → 5 | 21.52 → 27.45 |
+| `Minimum_Window_Substring` | cpp | 1,439,641 → 1,724,024 (+284,383) | 5 → 6 | 26.03 → 34.60 |
+| `Permutation_Sequence` | cpp | 1,528,215 → 1,829,034 (+300,819) | 5 → 6 | 28.41 → 41.51 |
+| `Sorted_GCD_Pair_Queries` | cpp | 1,634,458 → 1,955,012 (+320,554) | 5 → 6 | 32.33 → 59.64 |
+| `Find_Number_of_Coins_to_Place_in_Tree_Nodes` | cpp | 2,827,225 → 3,172,891 (+345,666) | 8 → 9 | 56.54 → 76.61 |
+| `Text_Justification` | cpp | 1,506,848 → 1,880,204 (+373,356) | 4 → 5 | 22.82 → 28.31 |
+| `Find_the_Sum_of_Subsequence_Powers` | cpp | 2,008,141 → 3,186,055 (+1,177,914) | 5 → 8 | 36.91 → 115.76 |
 
-Each missing turn was 94K–390K tokens — a non-trivial undercount. The 9
-`.txt` files were corrected by re-including the missing turn and
+The 9 `.txt` files were corrected by re-including the missing turn(s) and
 recomputing; the other 42 files needed no change. The corrected numbers are
 what's currently saved in `Results/code/claude/`.
 
