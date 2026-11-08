@@ -1,0 +1,4 @@
+total_tokens=1293182
+tool_use_count=15
+distinct_message_ids=15
+time_delta_seconds=124.065
