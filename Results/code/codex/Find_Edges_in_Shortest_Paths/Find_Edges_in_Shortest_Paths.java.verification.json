@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Find_Edges_in_Shortest_Paths/Find_Edges_in_Shortest_Paths.java",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Find_Edges_in_Shortest_Paths/Find_Edges_in_Shortest_Paths.java",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 521,
+  "baseline_tokens": 4331377,
+  "end": 528,
+  "verification": {
+    "human": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": true,
+    "same_failure_type": false,
+    "original_sha256": "570395e920a83f8e84c59c7fe738493a5d2b8c0d04d5bb84bc1ad842c77e3660",
+    "codex_sha256": "47ef661d39565f9d6599684a1ac251c6901df99cf24ce019a7650d419de11f6a"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=134228\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=7.484\n"
+}

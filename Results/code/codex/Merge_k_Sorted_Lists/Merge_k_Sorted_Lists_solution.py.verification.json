@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Merge_k_Sorted_Lists/Merge_k_Sorted_Lists_solution.py",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Merge_k_Sorted_Lists/Merge_k_Sorted_Lists_solution.py",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 365,
+  "baseline_tokens": 2550226,
+  "end": 376,
+  "verification": {
+    "human": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": true,
+    "same_failure_type": false,
+    "original_sha256": "4b7e343db4c86edb7af1e963b27a1e8dde9aa7bf6c46ff3f2d5b38684a721565",
+    "codex_sha256": "134023e590630a96c03b68dfafff0e1a4f64fd7ab7d2b12e4b1d8e7b01e47f0d"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=121159\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=7.002\n"
+}

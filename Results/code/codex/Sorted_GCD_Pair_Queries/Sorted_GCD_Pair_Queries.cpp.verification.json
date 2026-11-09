@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Sorted_GCD_Pair_Queries/Sorted_GCD_Pair_Queries.cpp",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Sorted_GCD_Pair_Queries/Sorted_GCD_Pair_Queries.cpp",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 642,
+  "baseline_tokens": 5856507,
+  "end": 653,
+  "verification": {
+    "human": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": true,
+    "same_failure_type": false,
+    "original_sha256": "1f363115dd90195a8dbe251fca9fb9cb73a9d02c067e84dcfb116e8dbfdd70f6",
+    "codex_sha256": "da2aa61529c1d27f51d8bdf180841a91d99c6a201aa2625e0208f04752348afe"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=144097\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=8.718\n"
+}

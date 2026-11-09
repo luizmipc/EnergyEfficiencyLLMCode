@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Trapping_Rain_Water/Trapping_Rain_Water.java",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Trapping_Rain_Water/Trapping_Rain_Water.java",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 323,
+  "baseline_tokens": 2074266,
+  "end": 330,
+  "verification": {
+    "human": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": true,
+    "same_failure_type": false,
+    "original_sha256": "ddf4c0249d9bca289800a8649a03461ec49cc75e94b9c9c7ca8a76755eb59da6",
+    "codex_sha256": "0bda558e92ebfdc38531f2205dc1132b584285d2ae8663c86837ab7a1fca0fe4"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=117616\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=6.658\n"
+}

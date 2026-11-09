@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Sudoku_Solver/Sudoku_Solver_solution.py",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Sudoku_Solver/Sudoku_Solver_solution.py",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 231,
+  "baseline_tokens": 1191309,
+  "end": 240,
+  "verification": {
+    "human": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": true,
+    "same_failure_type": false,
+    "original_sha256": "5c8a96bca1e9e9d8f85d53706887ff3c9f6312d1e66ab44ac920e0a7184c8a51",
+    "codex_sha256": "77ecd231644ddbe99ce6f09f82acfdae17174e0620ddb72a35c985430696a8a4"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=102593\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=11.292\n"
+}

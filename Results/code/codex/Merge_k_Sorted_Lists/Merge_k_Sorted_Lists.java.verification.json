@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Merge_k_Sorted_Lists/Merge_k_Sorted_Lists.java",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Merge_k_Sorted_Lists/Merge_k_Sorted_Lists.java",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 389,
+  "baseline_tokens": 2793406,
+  "end": 398,
+  "verification": {
+    "human": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "/tmp/codex-verify-boogn21p/Merge_k_Sorted_Lists.java:3: error: class Solution is public, should be declared in a file named Solution.java\npublic class Solution {\n       ^\n1 error\n",
+      "mode": "compile"
+    },
+    "codex": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Exception in thread \"main\" java.lang.NullPointerException\n\tat java.base/java.util.Objects.requireNonNull(Objects.java:222)\n\tat java.base/java.util.ImmutableCollections$ListN.<init>(ImmutableCollections.java:432)\n\tat java.base/java.util.List.of(List.java:1040)\n\tat Merge_k_Sorted_Lists.runTests(Merge_k_Sorted_Lists.java:86)\n\tat Merge_k_Sorted_Lists.main(Merge_k_Sorted_Lists.java:114)\n",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": false,
+    "same_failure_type": false,
+    "original_sha256": "e870368954b9a2260fd45782e76123645a1902ddea1fec2aa824877e494424e4",
+    "codex_sha256": "755a511e39727510602c0ba2989f339a69412542a1d0b614e038944c32d345ec"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=123124\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=6.7\n"
+}

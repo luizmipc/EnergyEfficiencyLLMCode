@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Find_the_Sum_of_Subsequence_Powers/Find_the_Sum_of_Subsequence_Powers.cpp",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Find_the_Sum_of_Subsequence_Powers/Find_the_Sum_of_Subsequence_Powers.cpp",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 751,
+  "baseline_tokens": 7348586,
+  "end": 760,
+  "verification": {
+    "human": {
+      "returncode": -6,
+      "stdout": "",
+      "stderr": "program: /tmp/codex-verify-93c1ayoz/Find_the_Sum_of_Subsequence_Powers.cpp:51: void testSolution(Solution&): Assertion `solution.sumOfPowers(nums, k) == expected_result && \"Test case 2 failed.\"' failed.\n",
+      "mode": "embedded assertions, one iteration"
+    },
+    "codex": {
+      "returncode": -6,
+      "stdout": "",
+      "stderr": "program: /tmp/codex-verify-69sl0kv6/Find_the_Sum_of_Subsequence_Powers.cpp:60: void testSolution(Solution&): Assertion `solution.sumOfPowers(nums, k) == expected_result && \"Test case 2 failed.\"' failed.\n",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": false,
+    "same_failure_type": true,
+    "original_sha256": "f654e5c8adc94d4756eaa0da06cc2292c46d789a2918b68e36af7df9548e403c",
+    "codex_sha256": "b975eb9cd9dcb7b153a98c98c8e9e373180a11b9e7e3c453ab00127331b0b872"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=154492\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=9.625\n"
+}

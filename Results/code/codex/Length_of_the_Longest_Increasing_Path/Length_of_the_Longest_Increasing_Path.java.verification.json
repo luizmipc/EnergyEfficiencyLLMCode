@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Length_of_the_Longest_Increasing_Path/Length_of_the_Longest_Increasing_Path.java",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Length_of_the_Longest_Increasing_Path/Length_of_the_Longest_Increasing_Path.java",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 554,
+  "baseline_tokens": 4737093,
+  "end": 563,
+  "verification": {
+    "human": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": true,
+    "same_failure_type": false,
+    "original_sha256": "97eed742b17a7250d506294b19923bfbfe1d56cbd1794f757b590d6ddbbd62b6",
+    "codex_sha256": "3cc9ae223eb7d973e322575483ae644b295592b7dbe010ce2a3e9ff4809a8ee7"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=137118\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=8.574\n"
+}

@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Find_Number_of_Coins_to_Place_in_Tree_Nodes/Find_Number_of_Coins_to_Place_in_Tree_Nodes.java",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Find_Number_of_Coins_to_Place_in_Tree_Nodes/Find_Number_of_Coins_to_Place_in_Tree_Nodes.java",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 686,
+  "baseline_tokens": 6439119,
+  "end": 695,
+  "verification": {
+    "human": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": true,
+    "same_failure_type": false,
+    "original_sha256": "cb58ac5730998e08ecc74ec71de72c22faebd30b35fec05fe480e97d64e20996",
+    "codex_sha256": "cb90fcda903613082da07a89bc07d105f3a9b68dc57333761cae5bc57a209f9c"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=148881\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=8.119\n"
+}

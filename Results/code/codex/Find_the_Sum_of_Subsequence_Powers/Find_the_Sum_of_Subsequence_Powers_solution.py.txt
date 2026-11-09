@@ -1,0 +1,4 @@
+total_tokens=307029
+tool_call_count=2
+turn_context_count=0
+time_delta_seconds=16.908

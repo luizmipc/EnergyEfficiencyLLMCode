@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Largest_Rectangle_in_Histogram/Largest_Rectangle_in_Histogram_solution.py",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Largest_Rectangle_in_Histogram/Largest_Rectangle_in_Histogram_solution.py",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 332,
+  "baseline_tokens": 2191882,
+  "end": 341,
+  "verification": {
+    "human": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": true,
+    "same_failure_type": false,
+    "original_sha256": "e5c0f512b2821cbf16183b5fc105acc50f2d202e2d3c0735963f4f2a3c63eb69",
+    "codex_sha256": "e1bf159a4e7a9424edbbbd2324023c84ba3dd24aeedbbcb98647132573112d2a"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=118753\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=4.909\n"
+}

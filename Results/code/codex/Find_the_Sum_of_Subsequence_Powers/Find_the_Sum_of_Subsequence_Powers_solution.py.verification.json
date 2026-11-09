@@ -1,0 +1,37 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Find_the_Sum_of_Subsequence_Powers/Find_the_Sum_of_Subsequence_Powers_solution.py",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Find_the_Sum_of_Subsequence_Powers/Find_the_Sum_of_Subsequence_Powers_solution.py",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 732,
+  "baseline_tokens": 7041557,
+  "end": 749,
+  "verification": {
+    "human": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration",
+      "compatibility": "Python 3.8 verification only: functools.cache = functools.lru_cache(maxsize=None)"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration",
+      "compatibility": "Python 3.8 verification only: functools.cache = functools.lru_cache(maxsize=None)"
+    },
+    "outputs_equal": true,
+    "both_successful": true,
+    "same_failure_type": false,
+    "original_sha256": "259c1fd7feb94a5a4e0304e76452f22720292f094bf44b9bc652d4ed5b7b1ba4",
+    "codex_sha256": "0e466c8e2db7055c22042f4dd1aa838dd3eec4b316e0e885ee33464989b594c7"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=307029\ntool_call_count=2\nturn_context_count=0\ntime_delta_seconds=16.908\n"
+}

@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/Sudoku_Solver/Sudoku_Solver.java",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/Sudoku_Solver/Sudoku_Solver.java",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 253,
+  "baseline_tokens": 1398879,
+  "end": 264,
+  "verification": {
+    "human": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "/tmp/codex-verify-vm_o7qst/Sudoku_Solver.java:3: error: class Solution is public, should be declared in a file named Solution.java\npublic class Solution {\n       ^\n1 error\n",
+      "mode": "compile"
+    },
+    "codex": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "Exception in thread \"main\" java.lang.AssertionError: Test case 1 failed.\n\tat Sudoku_Solver.runTests(Sudoku_Solver.java:69)\n\tat Sudoku_Solver.main(Sudoku_Solver.java:128)\n",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": false,
+    "same_failure_type": false,
+    "original_sha256": "f3df730d6cf9615e33f41ed5e56c04f1113a5b9431e0ad90ac702bbfb3969e88",
+    "codex_sha256": "ab8161e68f076013e64ce7d4e76464c609e3165724680d5ef0484356422c5f2b"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=107466\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=10.144\n"
+}

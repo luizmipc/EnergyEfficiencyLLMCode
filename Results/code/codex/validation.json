@@ -1,0 +1,942 @@
+{
+  "mode": "embedded assertions once; saved repetition loops unchanged",
+  "python": "3.8.10 (default, Mar 18 2025, 20:04:55) \n[GCC 9.4.0]",
+  "variants": [
+    {
+      "problem": "N-Queens",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "a182dcbd736415c33f074a9cb7738a5b69789ffaa99b6046b276297a2cc28e04"
+    },
+    {
+      "problem": "N-Queens",
+      "language": "java",
+      "human": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "/tmp/codex-check-tn4mdm3d/NQueens.java:6: error: class Solution is public, should be declared in a file named Solution.java\npublic class Solution {\n       ^\n1 error\n",
+        "phase": "compile"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "5c4df5936d3825018c8e23d0870d99af80673104d73bcb5cf3e705212e9278e5",
+      "human_with_declaration_repair": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      }
+    },
+    {
+      "problem": "N-Queens",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "54301e3331bd0a337fecd554189c67288bc4c4e3ab4f1d32fea930298631df38"
+    },
+    {
+      "problem": "Sudoku_Solver",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "77ecd231644ddbe99ce6f09f82acfdae17174e0620ddb72a35c985430696a8a4"
+    },
+    {
+      "problem": "Sudoku_Solver",
+      "language": "java",
+      "human": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "/tmp/codex-check-qfil12gd/Sudoku_Solver.java:3: error: class Solution is public, should be declared in a file named Solution.java\npublic class Solution {\n       ^\n1 error\n",
+        "phase": "compile"
+      },
+      "codex": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.AssertionError: Test case 1 failed.\n\tat Sudoku_Solver.runTests(Sudoku_Solver.java:69)\n\tat Sudoku_Solver.main(Sudoku_Solver.java:128)\n",
+        "phase": "assertions"
+      },
+      "sha256": "ab8161e68f076013e64ce7d4e76464c609e3165724680d5ef0484356422c5f2b",
+      "human_with_declaration_repair": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.AssertionError: Test case 1 failed.\n\tat Sudoku_Solver.runTests(Sudoku_Solver.java:69)\n\tat Sudoku_Solver.main(Sudoku_Solver.java:128)\n",
+        "phase": "assertions"
+      }
+    },
+    {
+      "problem": "Sudoku_Solver",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "77fb20a4d4738a0c910ec1cd4fc462218a8dba47e69a57a27798c1fbc819337c"
+    },
+    {
+      "problem": "Median_of_Two_Sorted_Arrays",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "563efb5625f2e44b6d2cbac0538ddb2f8f1dc64f4997bcd4a615463bcbdfc63f"
+    },
+    {
+      "problem": "Median_of_Two_Sorted_Arrays",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "7cedc0929cd073364f07e12d2475df62bd8b61840c4bea79d3e8b39c3512115d"
+    },
+    {
+      "problem": "Median_of_Two_Sorted_Arrays",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "ecfaab93ede7e33c6d6bff232b664fe7b8647d5ed874edd97ff7988d5489b42d"
+    },
+    {
+      "problem": "Trapping_Rain_Water",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "5a1e5272e05255a4214ee973190e4d5f5c1ff6067574cddbf7c03391bcd91936"
+    },
+    {
+      "problem": "Trapping_Rain_Water",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "0bda558e92ebfdc38531f2205dc1132b584285d2ae8663c86837ab7a1fca0fe4"
+    },
+    {
+      "problem": "Trapping_Rain_Water",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "8de63d6fbe40d6b7aa426d0498e8c0f9452bfecc0d2d2b7cbb5adc8af6623f39"
+    },
+    {
+      "problem": "Largest_Rectangle_in_Histogram",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "e1bf159a4e7a9424edbbbd2324023c84ba3dd24aeedbbcb98647132573112d2a"
+    },
+    {
+      "problem": "Largest_Rectangle_in_Histogram",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "2b98047df9cdbbcdb05ba22bdc57b0ca58307872c82da71e3b79e0a1bd611f58"
+    },
+    {
+      "problem": "Largest_Rectangle_in_Histogram",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "d6e3d476684576eeeb28bb457f41030f1469f8fb4252f576a93074fd97e31abc"
+    },
+    {
+      "problem": "Merge_k_Sorted_Lists",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "134023e590630a96c03b68dfafff0e1a4f64fd7ab7d2b12e4b1d8e7b01e47f0d"
+    },
+    {
+      "problem": "Merge_k_Sorted_Lists",
+      "language": "java",
+      "human": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "/tmp/codex-check-a5ypqw8e/Merge_k_Sorted_Lists.java:3: error: class Solution is public, should be declared in a file named Solution.java\npublic class Solution {\n       ^\n1 error\n",
+        "phase": "compile"
+      },
+      "codex": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.NullPointerException\n\tat java.base/java.util.Objects.requireNonNull(Objects.java:222)\n\tat java.base/java.util.ImmutableCollections$ListN.<init>(ImmutableCollections.java:432)\n\tat java.base/java.util.List.of(List.java:1040)\n\tat Merge_k_Sorted_Lists.runTests(Merge_k_Sorted_Lists.java:86)\n\tat Merge_k_Sorted_Lists.main(Merge_k_Sorted_Lists.java:114)\n",
+        "phase": "assertions"
+      },
+      "sha256": "755a511e39727510602c0ba2989f339a69412542a1d0b614e038944c32d345ec",
+      "human_with_declaration_repair": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "Exception in thread \"main\" java.lang.NullPointerException\n\tat java.base/java.util.Objects.requireNonNull(Objects.java:222)\n\tat java.base/java.util.ImmutableCollections$ListN.<init>(ImmutableCollections.java:432)\n\tat java.base/java.util.List.of(List.java:1040)\n\tat Merge_k_Sorted_Lists.runTests(Merge_k_Sorted_Lists.java:95)\n\tat Merge_k_Sorted_Lists.main(Merge_k_Sorted_Lists.java:123)\n",
+        "phase": "assertions"
+      }
+    },
+    {
+      "problem": "Merge_k_Sorted_Lists",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "d0b3343fac0aca4d10112e850cbe673f97a59db9489858ac5c2746132071c43d"
+    },
+    {
+      "problem": "Reverse_Nodes_in_k-Group",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "66d77f0717a2e4d9cc4293076a5dd2aa7540e2364625145d5988dc253e61626f"
+    },
+    {
+      "problem": "Reverse_Nodes_in_k-Group",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "63b62ffe9b37253f95524cdde4d00686c437887b4a942696e26d682c294c5ae5"
+    },
+    {
+      "problem": "Reverse_Nodes_in_k-Group",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "da99a6cba3ff8a2697701c0b98cfddbbc3e1604bd0b970f11fb697ccffdac49c"
+    },
+    {
+      "problem": "Regular_Expression_Matching",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "dc83affbc603df2d2afdfca15fe4689b6e25485c0e1cccd482b3adbe444d1745"
+    },
+    {
+      "problem": "Regular_Expression_Matching",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "f9e30cf18b42ee921153595a03cee36118e37263368dc8c032342bdf0beb3aca"
+    },
+    {
+      "problem": "Regular_Expression_Matching",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "e322e2b3348becb4769ce7cb43076c0c9e57f9b4e47d98093ead5d6b13d7ccc1"
+    },
+    {
+      "problem": "First_Missing_Positive",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "72cc73a2a5207ed6b24bed56fac22f805570c34aa58ccde24330a6a50c97d682"
+    },
+    {
+      "problem": "First_Missing_Positive",
+      "language": "java",
+      "human": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "/tmp/codex-check-ze6tk1kx/First_Missing_Positive.java:1: error: class Solution is public, should be declared in a file named Solution.java\npublic class Solution {\n       ^\n1 error\n",
+        "phase": "compile"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "2c34d472fd1d21fc3ad2552fee50d3350f6b69b6b6c9c4e4ed8f9d32063c7b89",
+      "human_with_declaration_repair": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      }
+    },
+    {
+      "problem": "First_Missing_Positive",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "9ff8fa114cc5c04255a11f3689dcd2668371f376cba3000e89f4f6cb7534e885"
+    },
+    {
+      "problem": "Find_Edges_in_Shortest_Paths",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "737cb36a5b4028f6acad52dd7fa162f39d8aaf06e2abaddcf736fb907171fd81"
+    },
+    {
+      "problem": "Find_Edges_in_Shortest_Paths",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "47ef661d39565f9d6599684a1ac251c6901df99cf24ce019a7650d419de11f6a"
+    },
+    {
+      "problem": "Find_Edges_in_Shortest_Paths",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "e3a68f076383cb1c89d9dfbac13aba85c2405c9299da95d2e82129cd1351266d"
+    },
+    {
+      "problem": "Length_of_the_Longest_Increasing_Path",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "a066c03fbab5e292165ab617dec6fb7756a365086735516b6ba420745d5a1a67"
+    },
+    {
+      "problem": "Length_of_the_Longest_Increasing_Path",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "3cc9ae223eb7d973e322575483ae644b295592b7dbe010ce2a3e9ff4809a8ee7"
+    },
+    {
+      "problem": "Length_of_the_Longest_Increasing_Path",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "02b41371e7b009a43bfceab6a98bde5ce1ef86412e6f798b6638fcb5c738c4c7"
+    },
+    {
+      "problem": "Minimum_Window_Substring",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "60443609d608b803049bca1b9305a36900970ac2a6b613e8167853f9b39464e5"
+    },
+    {
+      "problem": "Minimum_Window_Substring",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "f9ad786928b452a171c1e8a926ca7b64392bdc2a46ef386587a7d3117bcb038f"
+    },
+    {
+      "problem": "Minimum_Window_Substring",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "7c72a60587a15b6c085e0098f7f3d8acfff7c0a7b291023f260a8f21c64d14bc"
+    },
+    {
+      "problem": "Permutation_Sequence",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "e73a8c8d9d265c8a62cffd73f3bdf0e3ccc0a5a6e3b48423fb486e32648bc06c"
+    },
+    {
+      "problem": "Permutation_Sequence",
+      "language": "java",
+      "human": {
+        "returncode": 1,
+        "stdout": "",
+        "stderr": "/tmp/codex-check-xnlcoir3/Permutation_Sequence.java:4: error: class Solution is public, should be declared in a file named Solution.java\npublic class Solution {\n       ^\n1 error\n",
+        "phase": "compile"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "8d8b5f451359bf0c7869b0cf69d860ab2f73a6887f4a68135bbcfcf0011ce0c3",
+      "human_with_declaration_repair": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      }
+    },
+    {
+      "problem": "Permutation_Sequence",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "a0beb8218cef987389ca3c9154712562ccad4004a512c5078fdafef3d4e4c1a2"
+    },
+    {
+      "problem": "Sorted_GCD_Pair_Queries",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "52dce0aef229aa301e1b2492194f7af352e3f2e54e712883925a2c0e3741a13c"
+    },
+    {
+      "problem": "Sorted_GCD_Pair_Queries",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "7eb116b757e302c5d96ec669be37f9b8eed49196c0bf2b8f8800cb8736f1a08c"
+    },
+    {
+      "problem": "Sorted_GCD_Pair_Queries",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "da2aa61529c1d27f51d8bdf180841a91d99c6a201aa2625e0208f04752348afe"
+    },
+    {
+      "problem": "Find_Number_of_Coins_to_Place_in_Tree_Nodes",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "57ded127011533592db4ff28280e9f0bd8ead01a7e9734c01c3646e94cf66efb"
+    },
+    {
+      "problem": "Find_Number_of_Coins_to_Place_in_Tree_Nodes",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "cb90fcda903613082da07a89bc07d105f3a9b68dc57333761cae5bc57a209f9c"
+    },
+    {
+      "problem": "Find_Number_of_Coins_to_Place_in_Tree_Nodes",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "fc82b62bbb3d102ce29364af6036c53ad9633fc419958cb2421474d79c626c2c"
+    },
+    {
+      "problem": "Text_Justification",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      "sha256": "26f61b88133a1b0db02558c4a04199710097746453105ab6ed4af0e04bede4af"
+    },
+    {
+      "problem": "Text_Justification",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "a0bf2ee0784dd414e13046374be6a7be51874f68a38c4a7c04007b16f36ffbdb"
+    },
+    {
+      "problem": "Text_Justification",
+      "language": "cpp",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "6a3d062082eb06a89747a278626efae0ee809cf8ea3502f5cc09d94c2ce4254b"
+    },
+    {
+      "problem": "Find_the_Sum_of_Subsequence_Powers",
+      "language": "python",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "compatibility": "functools.cache verified using equivalent lru_cache(maxsize=None) shim"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "compatibility": "functools.cache verified using equivalent lru_cache(maxsize=None) shim"
+      },
+      "sha256": "0e466c8e2db7055c22042f4dd1aa838dd3eec4b316e0e885ee33464989b594c7"
+    },
+    {
+      "problem": "Find_the_Sum_of_Subsequence_Powers",
+      "language": "java",
+      "human": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": 0,
+        "stdout": "",
+        "stderr": "",
+        "phase": "assertions"
+      },
+      "sha256": "b5c8ad027dc49f619897b2421febc092e6aed60a2dd1e68ff38f90991b66a371"
+    },
+    {
+      "problem": "Find_the_Sum_of_Subsequence_Powers",
+      "language": "cpp",
+      "human": {
+        "returncode": -6,
+        "stdout": "",
+        "stderr": "program: /tmp/codex-check-gh0dwy99/Find_the_Sum_of_Subsequence_Powers.cpp:51: void testSolution(Solution&): Assertion `solution.sumOfPowers(nums, k) == expected_result && \"Test case 2 failed.\"' failed.\n",
+        "phase": "assertions"
+      },
+      "codex": {
+        "returncode": -6,
+        "stdout": "",
+        "stderr": "program: /tmp/codex-check-oti17xaw/Find_the_Sum_of_Subsequence_Powers.cpp:60: void testSolution(Solution&): Assertion `solution.sumOfPowers(nums, k) == expected_result && \"Test case 2 failed.\"' failed.\n",
+        "phase": "assertions"
+      },
+      "sha256": "b975eb9cd9dcb7b153a98c98c8e9e373180a11b9e7e3c453ab00127331b0b872"
+    }
+  ],
+  "python_differential": [
+    {
+      "problem": "N-Queens",
+      "cases_passed": 9
+    },
+    {
+      "problem": "Sudoku_Solver",
+      "cases_passed": 50
+    },
+    {
+      "problem": "Median_of_Two_Sorted_Arrays",
+      "cases_passed": 199
+    },
+    {
+      "problem": "Trapping_Rain_Water",
+      "cases_passed": 200
+    },
+    {
+      "problem": "Largest_Rectangle_in_Histogram",
+      "cases_passed": 200
+    },
+    {
+      "problem": "Merge_k_Sorted_Lists",
+      "cases_passed": 100
+    },
+    {
+      "problem": "Reverse_Nodes_in_k-Group",
+      "cases_passed": 100
+    },
+    {
+      "problem": "Regular_Expression_Matching",
+      "cases_passed": 200
+    },
+    {
+      "problem": "First_Missing_Positive",
+      "cases_passed": 200
+    },
+    {
+      "problem": "Find_Edges_in_Shortest_Paths",
+      "cases_passed": 100
+    },
+    {
+      "problem": "Length_of_the_Longest_Increasing_Path",
+      "cases_passed": 100
+    },
+    {
+      "problem": "Minimum_Window_Substring",
+      "cases_passed": 200
+    },
+    {
+      "problem": "Permutation_Sequence",
+      "cases_passed": 160
+    },
+    {
+      "problem": "Sorted_GCD_Pair_Queries",
+      "cases_passed": 100
+    },
+    {
+      "problem": "Find_Number_of_Coins_to_Place_in_Tree_Nodes",
+      "cases_passed": 100
+    },
+    {
+      "problem": "Text_Justification",
+      "cases_passed": 100
+    },
+    {
+      "problem": "Find_the_Sum_of_Subsequence_Powers",
+      "cases_passed": 100
+    }
+  ],
+  "python_differential_total": 2218
+}

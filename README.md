@@ -2,7 +2,7 @@
 
 This repository investigates the energy consumption and performance of coding solutions generated/refactored by large language models (LLMs). The original study measured baseline (human-written) solutions against LLM-generated ones (ChatGPT 4o, OpenAI o1-mini, GitHub Copilot) using `perf`/`powermetrics`.
 
-This fork (`replication-study` branch) runs a **replication**: Claude Code is asked to refactor a subset of the same human-written solutions for energy efficiency, measured with [`codecarbon`](https://docs.codecarbon.io/) instead of `perf`/`powermetrics`. A Codex replication is documented but not yet run (see [RQ3](#analysis)).
+This fork (`replication-study` branch) runs a **replication**: Claude Code is asked to refactor a subset of the same human-written solutions for energy efficiency, measured with [`codecarbon`](https://docs.codecarbon.io/) instead of `perf`/`powermetrics`. The Codex refactoring now has 51 variants and correctness checks; Codex energy measurements remain pending. See [Codex_Experiment_Procedure.md](Codex_Experiment_Procedure.md) for results and usage-metric limitations.
 
 ---
 
@@ -35,7 +35,7 @@ This fork (`replication-study` branch) runs a **replication**: Claude Code is as
 #### **Results**
 
 - **`code/claude/<Problem>/`**: Claude Code's energy-refactored solution for each of the 17 selected problems, in Python, Java, and C++, using the same filenames as `src/data/human/`. Each solution is accompanied by a `<filename>.txt` file recording that variant's LLM usage metrics (total tokens, tool-call count, model-turn count, wall-clock time) — see `PROMPT.md`/`Claude_Experiment_Procedure.md`.
-- **`code/codex/`**: Not yet populated — reserved for the Codex replication described in `PROMPT.md`.
+- **`code/codex/`**: 51 refactored variants, snapshot-metric sidecars, per-variant verification records, and `validation.json`. Run `python3 -B src/verify_codex_replication.py` for isolated correctness checks: 48 embedded suites pass and 3 retain documented baseline runtime failures. Metrics are snapshot-derived and do not reliably isolate per-variant LLM effort; see [Codex_Experiment_Procedure.md](Codex_Experiment_Procedure.md).
 
 #### **Analysis**
 

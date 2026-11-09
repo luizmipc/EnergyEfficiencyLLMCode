@@ -1,0 +1,35 @@
+{
+  "original": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/src/data/human/N-Queens/NQueens.java",
+  "target": "/home/julio/Projects/Doutorado/INF2005/EnergyEfficiencyLLMCode/Results/code/codex/N-Queens/NQueens.java",
+  "rollout": "/home/julio/.codex/sessions/2026/11/08/rollout-2026-11-08T20-27-50-01a1bd7d-56f4-79f2-abf3-10c65c2f5263.jsonl",
+  "start": 219,
+  "baseline_tokens": 1090690,
+  "end": 229,
+  "verification": {
+    "human": {
+      "returncode": 1,
+      "stdout": "",
+      "stderr": "/tmp/codex-verify-dsrde5ke/NQueens.java:6: error: class Solution is public, should be declared in a file named Solution.java\npublic class Solution {\n       ^\n1 error\n",
+      "mode": "compile"
+    },
+    "codex": {
+      "returncode": 0,
+      "stdout": "",
+      "stderr": "",
+      "mode": "embedded assertions, one iteration"
+    },
+    "outputs_equal": true,
+    "both_successful": false,
+    "same_failure_type": false,
+    "original_sha256": "9f989c394ad47a67039b70b2d01d003802fe27882b28dc82dcdd61e49694a5db",
+    "codex_sha256": "5c4df5936d3825018c8e23d0870d99af80673104d73bcb5cf3e705212e9278e5"
+  },
+  "metric_status": "snapshot_only_not_reliable_per_variant_effort",
+  "metric_caveats": [
+    "turn_context counts user turns in this log, not model responses.",
+    "token_count snapshots arrive after tool completion, shifting effort across variant boundaries.",
+    "tool_call_count counts top-level rollout events, excluding nested operations.",
+    "Later aggregate verification is excluded from these snapshots."
+  ],
+  "metrics": "total_tokens=100619\ntool_call_count=1\nturn_context_count=0\ntime_delta_seconds=15.524\n"
+}
