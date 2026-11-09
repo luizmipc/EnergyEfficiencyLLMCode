@@ -3,6 +3,7 @@
 codecarbon (https://docs.codecarbon.io/) and appending each run to:
 
     Analysis/data/code/claude/<Problem>/<Language>/emissions.csv
+    Analysis/data/code/codex/<Problem>/<Language>/emissions.csv
     Analysis/data/code/human/<Problem>/<Language>/emissions.csv
 
 Usage:
@@ -14,6 +15,7 @@ import shutil
 import subprocess
 import sys
 import time
+from datetime import timedelta
 
 from codecarbon import EmissionsTracker, OutputMethod
 
@@ -73,4 +75,8 @@ def main():
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    start = time.monotonic()
+    exit_code = main()
+    elapsed = time.monotonic() - start
+    print(f"Total time: {timedelta(seconds=round(elapsed))}")
+    sys.exit(exit_code)

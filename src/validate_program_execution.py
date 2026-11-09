@@ -1,6 +1,6 @@
 """Compiles (if needed) and runs every program in config/constants.py,
-printing finished/failed with timing for each, across both HUMAN and CLAUDE
-sources.
+printing finished/failed with timing for each, across every source in
+SOURCES (HUMAN, CLAUDE, CODEX).
 
 Usage:
     python3 src/validate_program_execution.py

@@ -1,11 +1,12 @@
 """Constants describing the programs under Results/code/claude (energy-refactored
-by Claude) and src/data/human (the original human-written baseline).
+by Claude), Results/code/codex (the same refactor, done by Codex), and
+src/data/human (the original human-written baseline).
 
 PROGRAMS lists every problem together with the filename of its solution in
-each language. Both sources use the exact same per-language filename for a
-given program (the refactor kept "same filename as the original"), so one
-"files" mapping per program covers both CODE_DIR and HUMAN_DIR. LANGUAGES
-lists the language keys used throughout.
+each language. All three sources use the exact same per-language filename for
+a given program (the refactor kept "same filename as the original"), so one
+"files" mapping per program covers CODE_DIR, CODEX_DIR, and HUMAN_DIR.
+LANGUAGES lists the language keys used throughout.
 
 Each program's "leetcode_number" and "tags" come from Sheets/Tasks_and_Tags.xlsx.
 TAG_CATEGORIES groups those tags the same way Sheets/Grouping_of_Tags.xlsx does
@@ -19,6 +20,7 @@ import os
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 CODE_DIR = os.path.join(REPO_ROOT, "Results", "code", "claude")
+CODEX_DIR = os.path.join(REPO_ROOT, "Results", "code", "codex")
 HUMAN_DIR = os.path.join(REPO_ROOT, "src", "data", "human")
 
 PYTHON = "python"
@@ -28,14 +30,17 @@ CPP = "cpp"
 LANGUAGES = [PYTHON, JAVA, CPP]
 
 # Which implementation to run: CLAUDE is the energy-refactored version under
-# CODE_DIR, HUMAN is the original baseline under HUMAN_DIR.
+# CODE_DIR, CODEX is the same refactor done by Codex under CODEX_DIR, HUMAN is
+# the original baseline under HUMAN_DIR.
 CLAUDE = "claude"
+CODEX = "codex"
 HUMAN = "human"
-SOURCES = [HUMAN, CLAUDE]
+SOURCES = [HUMAN, CLAUDE, CODEX]
 
 SOURCE_DIRS = {
     HUMAN: HUMAN_DIR,
     CLAUDE: CODE_DIR,
+    CODEX: CODEX_DIR,
 }
 
 # How long (seconds) a single program is allowed to run before it is
@@ -48,7 +53,7 @@ CODECARBON_DATA_DIR = os.path.join(REPO_ROOT, "Analysis", "data", "code")
 
 # Each program is executed this many times, with this many seconds of idle
 # time between consecutive runs, when measuring with codecarbon.
-CODECARBON_RUNS = 2
+CODECARBON_RUNS = 10
 CODECARBON_INTERVAL_SECONDS = 5
 
 # Each entry: problem name -> folder under CODE_DIR -> filename per language.
@@ -287,8 +292,9 @@ def get_program_path(program, language, source=CLAUDE):
     """Return the absolute path to a program's source file for a language.
 
     source selects which implementation to use: HUMAN (src/data/human, the
-    original baseline) or CLAUDE (Results/code/claude, the energy-refactored
-    version). Both use the same per-language filename for a given program.
+    original baseline), CLAUDE (Results/code/claude, Claude's energy-refactored
+    version), or CODEX (Results/code/codex, Codex's energy-refactored version).
+    All three use the same per-language filename for a given program.
     """
     base_dir = SOURCE_DIRS[source]
     return os.path.join(base_dir, program["folder"], program["files"][language])
